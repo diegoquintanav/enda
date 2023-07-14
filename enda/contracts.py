@@ -349,7 +349,7 @@ class Contracts:
             train_set[epoch_column] = train_set.index.astype(np.int64) // 10**9
 
             test_set = pd.DataFrame(
-                data={"epoch_column": result_index.astype(np.int64) // 10**9},
+                data={epoch_column: result_index.astype(np.int64) // 10**9},
                 index=result_index,
             )
 
