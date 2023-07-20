@@ -46,6 +46,7 @@ setuptools = {version = "^68.0.0", extras = ["dev", "all"]}
 tox = {version = "^4.6.3", extras = ["dev", "all"]}
 twine = {version = "^4.0.2", extras = ["dev", "all"]}
 wheel = {version = "^0.40.0", extras = ["dev", "all"]}
+coverage = {version = "^7.2.7", extras = ["dev"]}
 
 [tool.poetry.extras]
 all = [
@@ -77,6 +78,7 @@ dev = [
   "tox",
   "twine",
   "wheel",
+  "coverage",
 ]
 examples = [
   "bottleneck",
