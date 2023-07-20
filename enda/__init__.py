@@ -1,4 +1,4 @@
-__version__ = "0.0.8"
+__version__ = "0.1.0"
 
 # Let users know if they're missing any of our hard dependencies
 hard_dependencies = ("pandas",)
