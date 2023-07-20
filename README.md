@@ -1,6 +1,6 @@
 # enda
 
-[![PyPI version](https://badge.fury.io/py/enda.svg)](https://badge.fury.io/py/enda)
+![PyPI](https://img.shields.io/pypi/v/enda?link=https%3A%2F%2Fpypi.org%2Fproject%2Fenda%2F) [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/) [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
 ## What is it?
 
