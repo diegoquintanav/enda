@@ -27,9 +27,15 @@ Package Index (PyPI)](https://pypi.org/project/enda) (for now it is not directly
 pip install enda
 ```
 
+If you wish to install the dependencies needed to run the examples, you can install `enda` with the `examples` extra:
+
+```sh
+pip install enda[examples]
+```
+
 ## How to get started?
 
-Check out the guides : https://github.com/enercoop/enda/tree/main/guides .
+Check out the guides: <https://github.com/enercoop/enda/tree/main/guides>.
 
 ## Hard dependencies
 
@@ -53,13 +59,24 @@ Other optional dependencies :
 
 Furthermore, don't hesitate to install pandas "Recommended dependencies" for speed-ups : `numexpr` and `bottleneck`.
 
-If you want to save your trained models, we recommend `joblib`. See Scikit-learn's recommendations here : https://scikit-learn.org/stable/modules/model_persistence.html .
+If you want to save your trained models, we recommend `joblib`. See Scikit-learn's recommendations here: <https://scikit-learn.org/stable/modules/model_persistence.html>.
 
-An almost complete install looks like :
+All these dependencies can be installed along `enda` with the following command:
 
+```sh
+pip install enda[examples]
 ```
+
+Or you can install them manually:
+
+```sh
 pip install numexpr bottleneck pandas enda jupyter h2o scikit-learn statsmodels joblib matplotlib
 ```
+
+## About `numpy` support for python 3.7
+
+Support for `numpy` and python 3.7 according to <https://numpy.org/neps/nep-0029-deprecation_policy.html#support-table>
+and <https://github.com/scipy/oldest-supported-numpy>
 
 ## License
 
