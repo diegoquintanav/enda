@@ -45,6 +45,7 @@ setuptools = { version = "^68.0.0", extras = ["dev"] }
 tox = { version = "^4.6.3", extras = ["dev"] }
 twine = { version = "^4.0.2", extras = ["dev"] }
 wheel = { version = "^0.40.0", extras = ["dev"] }
+pytest = {version = "^7.4.0", extras = ["dev"]}
 
 [tool.poetry.extras]
 all = [
@@ -95,3 +96,9 @@ examples = [
 [build-system]
 build-backend = "poetry.core.masonry.api"
 requires = ["poetry-core", "oldest-supported-numpy"]
+
+
+[[tool.poetry_bumpversion.replacements]]
+files = ["enda/__init__.py"]
+replace = '__version__ = "{new_version}"'
+search = '__version__ = "{current_version}"'

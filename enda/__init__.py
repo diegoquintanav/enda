@@ -1,3 +1,5 @@
+__version__ = "0.0.8"
+
 # Let users know if they're missing any of our hard dependencies
 hard_dependencies = ("pandas",)
 # note that we also need python-dateutil and pytz but pandas already depends on them, so importing pandas is enough
