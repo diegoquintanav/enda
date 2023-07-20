@@ -2579,4 +2579,4 @@ examples = []
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.7.3,<3.11"
-content-hash = "3953fcb13b156d58131d01c8d53678906922c44c054d35042c2a2fbe19a96cd0"
+content-hash = "80867d8674a31e7f8fb6e8b653789ebfca33ae816be5a640fa9ac2dbaa79ea4c"

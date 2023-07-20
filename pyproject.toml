@@ -20,32 +20,32 @@ version = "0.0.8"
 "Bug Tracker" = "https://github.com/enercoop/enda/issues"
 
 [tool.poetry.dependencies]
+h2o = "^3.40.0.4"
 pandas = ">=1.0.0,<2.0.0"
 python = ">=3.7.3,<3.11"
+scikit-learn = "^1.0.2"
+statsmodels = "<=0.13.5"
 
 [tool.poetry.group.examples.dependencies]
-bottleneck = { version = "^1.3.7", extras = ["examples"] }
-h2o = { version = "^3.40.0.4", extras = ["examples"] }
-joblib = { version = "^1.3.0", extras = ["examples"] }
-jours-feries-france = { version = "^0.7.0", extras = ["examples"] }
-matplotlib = { version = "^3.5.3", extras = ["examples"] }
-numexpr = { version = "^2.8.4", extras = ["examples"] }
-numpy = { version = "^1.18", extras = ["examples"] }
-scikit-learn = { version = "^1.0.2", extras = ["examples"] }
-seaborn = { version = "^0.12.2", extras = ["examples"] }
-statsmodels = { version = "<=0.13.5", extras = ["examples"] }
-unidecode = { version = "^1.3.6", extras = ["examples"] }
-vacances-scolaires-france = { version = "^0.10.0", extras = ["examples"] }
+bottleneck = {version = "^1.3.7", extras = ["examples", "all"]}
+joblib = {version = "^1.3.0", extras = ["examples", "all"]}
+jours-feries-france = {version = "^0.7.0", extras = ["examples", "all"]}
+matplotlib = {version = "^3.5.3", extras = ["examples", "all"]}
+numexpr = {version = "^2.8.4", extras = ["examples", "all"]}
+numpy = {version = "^1.18", extras = ["examples", "all"]}
+seaborn = {version = "^0.12.2", extras = ["examples", "all"]}
+unidecode = {version = "^1.3.6", extras = ["examples", "all"]}
+vacances-scolaires-france = {version = "^0.10.0", extras = ["examples", "all"]}
 
 [tool.poetry.group.dev.dependencies]
-black = { version = "^23.3.0", extras = ["dev"] }
-ipykernel = { version = "^6.16.2", extras = ["dev"] }
-pre-commit = { version = "<3.3.3", extras = ["dev"] }
-setuptools = { version = "^68.0.0", extras = ["dev"] }
-tox = { version = "^4.6.3", extras = ["dev"] }
-twine = { version = "^4.0.2", extras = ["dev"] }
-wheel = { version = "^0.40.0", extras = ["dev"] }
-pytest = {version = "^7.4.0", extras = ["dev"]}
+black = {version = "^23.3.0", extras = ["dev", "all"]}
+ipykernel = {version = "^6.16.2", extras = ["dev", "all"]}
+pre-commit = {version = "<3.3.3", extras = ["dev", "all"]}
+pytest = {version = "^7.4.0", extras = ["dev", "all"]}
+setuptools = {version = "^68.0.0", extras = ["dev", "all"]}
+tox = {version = "^4.6.3", extras = ["dev", "all"]}
+twine = {version = "^4.0.2", extras = ["dev", "all"]}
+wheel = {version = "^0.40.0", extras = ["dev", "all"]}
 
 [tool.poetry.extras]
 all = [
@@ -96,7 +96,6 @@ examples = [
 [build-system]
 build-backend = "poetry.core.masonry.api"
 requires = ["poetry-core", "oldest-supported-numpy"]
-
 
 [[tool.poetry_bumpversion.replacements]]
 files = ["enda/__init__.py"]
